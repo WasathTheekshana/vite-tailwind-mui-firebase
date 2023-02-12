@@ -6,6 +6,7 @@ import nameList from "./data/nameList";
 import { db } from "./firebase-config";
 import { collection, getDocs } from "firebase/firestore";
 import AddContact from "./components/AddContact";
+import Auth from "./components/Auth";
 
 function App() {
   const [name, setName] = useState([]);
@@ -34,6 +35,7 @@ function App() {
         ))}
       </div>
       <AddContact />
+      <Auth />
     </div>
   );
 }
